@@ -126,3 +126,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Screenshot
 ![Screenshot](src/assets/screenshot.png)
+
+##Tutorial
+- Please look at the [tutorial](tutorial.md) for a detailed step-by-step guide on creating new components, updating the router, and using state management.
