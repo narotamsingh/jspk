@@ -66,7 +66,7 @@ src
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/yourusername/jspk.git
+   git clone https://github.com/narotamsingh/jspk.git
    cd jspk
    ```
 
