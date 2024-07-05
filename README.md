@@ -123,3 +123,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ### Acknowledgments
 - Thanks to the contributors of [Webpack](https://webpack.js.org/), [Babel](https://babeljs.io/), [ESLint](https://eslint.org/), [Redux](https://redux.js.org/), [Navigo](https://github.com/krasimir/navigo), and [Tailwind CSS](https://tailwindcss.com/) for their fantastic tools and libraries.
+
+## Screenshot
+![Screenshot](src/assets/screenshot.png)
