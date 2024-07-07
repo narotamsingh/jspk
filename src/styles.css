@@ -2,13 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    --bg-color: white;
-    --text-color: #373737;
-    transition: background-color 0.5s, color 0.5s;
-  }
-  
+:root {
+  --bg-color: white;
+  --text-color: #333333;
+  --border-color: #e2e8f0;
+  --link-color: #6a1b9a;
+}
+
 body.dark {
-    --bg-color: #1a202c;
-    --text-color: rgb(183, 180, 180);
-  }
+  --bg-color: #1a202c;
+  --text-color: white;
+  --border-color: #2d3748;
+  --link-color: #b794f4;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+#app {
+  flex: 1;
+}
