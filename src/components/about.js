@@ -1,9 +1,15 @@
 const about = () => `
   <style>
+    body, html {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
     .about-container {
       padding: 2rem;
-      max-width: 800px;
+
       margin: 0 auto;
+      background-color: var(--bg-color); /* Ensure the container uses the background color variable */
+      color: var(--text-color); /* Ensure the text color uses the text color variable */
     }
     .about-container h1 {
       font-size: 2rem;
@@ -25,6 +31,16 @@ const about = () => `
     }
     .about-container li {
       margin-bottom: 0.5rem;
+    }
+    .about-container pre {
+      background-color: var(--bg-color);
+      padding: 1rem;
+      border-radius: 0.5rem;
+      overflow: auto;
+    }
+    .about-container code {
+      display: block;
+      white-space: pre;
     }
   </style>
   <div class="about-container">

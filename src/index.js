@@ -1,46 +1,20 @@
 import './styles.css'
-import store from './store.js'
-import { increment, decrement } from './actions.js'
+
 import router from './router.js'
-import home from './components/home.js'
-import about from './components/about.js'
 import { navbar, initNavbar } from './components/navbar.js'
+import { footer, initFooter } from './components/footer.js'
 
 // Render the navbar
 document.getElementById('navbar').innerHTML = navbar()
 initNavbar()
 
-function render(route) {
-  let component
+// Render the footer
+document.getElementById('footer').innerHTML = footer()
+initFooter()
 
-  if (route === 'about') {
-    component = about()
-  } else {
-    component = home()
-  }
-
-  document.getElementById('app').innerHTML = component
-
-  if (route === 'home') {
-    document.getElementById('increment').addEventListener('click', () => {
-      store.dispatch(increment())
-    })
-
-    document.getElementById('decrement').addEventListener('click', () => {
-      store.dispatch(decrement())
-    })
-
-    store.subscribe(() => {
-      document.getElementById('count').innerText = store.getState().count
-    })
-  }
+function render(component) {
+  document.getElementById('app').innerHTML = component()
 }
 
-router
-  .on({
-    '/': () => render('home'),
-    '/about': () => render('about'),
-  })
-  .resolve()
-
+export { render }
 router.updatePageLinks()
